@@ -1,0 +1,81 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+			"path": "pages/index/index",
+			"style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh":true, //是否开启下拉刷新
+        "backgroundColor":"#000" // 下拉区域的背景色
+			}
+    },
+    {
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "分类页面"
+			}
+    },
+    {
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+    },
+    {
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+    {
+      "path": "pages/goods/index"
+    },
+    {
+      "path": "pages/list/index",
+      "style":{ //当前页面配置
+        "navigationBarTitleText": "商品列表",
+        "onReachBottomDistance":50 // 距离 底部 50px时候 执行 上拉加载
+      }
+    },
+    {
+      "path": "pages/order/index"
+    },
+    {
+      "path": "pages/auth/index"
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#ea4451",
+    "navigationBarTitleText": "黑马优购"
+  },
+  "tabBar": {
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "selectedColor": "#ea4451",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/icon_home@3x.png",
+        "selectedIconPath": "static/tabs/icon_home_active@3x.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/index",
+        "iconPath": "static/tabs/icon_category@3x.png",
+        "selectedIconPath": "static/tabs/icon_category_active@3x.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/index",
+        "iconPath": "static/tabs/icon_cart@3x.png",
+        "selectedIconPath": "static/tabs/icon_cart_active@3x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/index",
+        "iconPath": "static/tabs/icon_user@3x.png",
+        "selectedIconPath": "static/tabs/icon_user_active@3x.png"
+      }
+    ]
+  }
+}

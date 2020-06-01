@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+      <script>
+          let arr=['a','b','c']
+          // 数组.findIndex()  循环数据 返回 满足条件的 那项的 索引
+          // 数组.forEach   数组.map  数组.some  数组.filter
+          let index=arr.findIndex((item)=>{
+              // console.log(item) // 每一项 a b c
+              return item==='d'
+          })
+
+          console.log('index索引',index)
+        
+      </script>
+</body>
+</html>
